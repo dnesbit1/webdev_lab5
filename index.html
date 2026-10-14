@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Volunteer Form</title>
+
+</head>
+
+<body>
+
+  <h1>Volunteer Form</h1>
+
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+  <fieldset>
+    <legend>My Info</legend>
+
+    <label for="first_name_field">First Name:</label>
+    <input type="text" id="fname" name="first_name_field"><br>
+
+    <label for="last_name_field">Last Name:</label>
+    <input type="text" id="lname" name="last_name_field"><br>
+
+    <label for="phone_field">Phone:</label>
+    <input type="tel" id="phone" name="phone_field" placeholder="123-456-7890"><br>
+
+    <label for="email_field">Email:</label>
+    <input type="email" id="email" name="email_field" placeholder="hello@world" required><br>
+
+    <label for="gender_field">Gender:</label><br>
+    <input type="radio" id="gender" name="gender_field" value="Male">
+    <label for="gender_field">Male</label>
+    <input type="radio" id="gender" name="gender_field" value="Female">
+    <label for=""gender_field>Female</label><br>
+
+    <label for="age">Age:</label>
+    <select id="age" name="age_field">
+      <option value="under 18">Under 18</option>
+      <option value="over 18">Over 18</option>
+    </select>
+
+
+  </fieldset>
+
+  <fieldset>
+    <legend>My Availability</legend>
+    
+    <h2>Available Days:</h2>
+    <input type="checkbox" id="day1" name="available_field[]" value="Sunday">
+    <label for="day1">Sunday</label><br>
+
+    <input type="checkbox" id="day2" name="available_field[]" value="Monday">
+    <label for="day2">Monday</label><br>
+
+    <input type="checkbox" id="day3" name="available_field[]" value="Tuesday">
+    <label for="day3">Tuesday</label><br>
+
+    <input type="checkbox" id="day4" name="available_field[]" value="Wednesday">
+    <label for="day4">Wednesday</label><br>
+    
+    <input type="checkbox" id="day5" name="available_field[]" value="Thursday">
+    <label for="day5">Thursday</label><br>
+
+    <input type="checkbox" id="day6" name="available_field[]" value="Friday">
+    <label for="day6">Friday</label><br>
+
+    <input type="checkbox" id="day7" name="available_field[]" value="Saturday">
+    <label for="day7">Saturday</label><br>
+
+    <h2>Comments</h2>
+    <textarea name="comments_field" rows="10" cols="30"></textarea><br><br>
+
+  </fieldset>
+
+  <input type="hidden" name="hidden_field" value="DeAnthony Nesbit">
+  <input type="submit">
+  </form>
+
+</body>
+
+</html>
